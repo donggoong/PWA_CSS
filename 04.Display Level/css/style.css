@@ -1,0 +1,147 @@
+h1 {
+  background-color: yellow;
+  width: 300px;
+}
+
+.ex1 span {
+  background-color: yellow;
+  display: inline-block;
+  width: 80px;
+  vertical-align: bottom;
+}
+
+.ex1 span:nth-child(1) {
+  height: 150px;
+  line-height: 150px;
+  text-align: right;
+}
+
+.ex1 span:nth-child(2) {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.ex1 span:nth-child(3) {
+  height: 50px;
+  line-height: 50px;
+}
+
+.ex2 {
+  background-color: #CCC;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  margin: 0 auto;
+}
+
+.ex2 div {
+  display: inline-block;
+  width: 100px;
+  background-color: yellow;
+}
+
+.ex2 div:nth-child(1) {
+  height: 100px;
+  line-height: 100px;
+}
+
+.ex2 div:nth-child(2) {
+  height: 200px;
+  line-height: 200px;
+}
+
+.ex3 .div1 {
+  background-color: yellow;
+  width: 500px;
+  text-align: right;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+.ex3 .div1 span {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.ex3 .div2 {
+  background-color: yellow;
+  text-align: right;
+  line-height: 100px;
+}
+
+.ex3 .div2 span {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.ex3 .div3 {
+  background-color: yellow;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ex3 .div3 span{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100px;
+}
+
+.ex3 .div4 {
+  background-color: yellow;
+  text-align: right;
+  line-height: 100px;
+}
+
+.ex3 .div4 span {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+} 
+.ex3 .div4 div:nth-child(1){
+  text-align: center;
+}
+
+.ex3 .div4 div:nth-child(2){
+  text-align: right;
+}
+
+.ex3 .div5 {
+  background-color: yellow;
+  line-height: 100px;
+}
+.ex3 .div5 span {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.ex3 .div5 div:nth-child(1) {
+  text-align: left;
+}
+.ex3 .div5 div:nth-child(2) {
+  text-align: right;
+}
+.ex3 .div5 div:nth-child(3) {
+  text-align: left;
+}
+.ex3 .div5 div:nth-child(4) {
+  text-align: right;
+}
