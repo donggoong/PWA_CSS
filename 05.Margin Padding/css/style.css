@@ -1,0 +1,94 @@
+.container1 {
+  width: 500px;
+  margin: 30px auto;
+  background-color: #eee;
+  padding: 95px;
+  box-sizing: border-box;
+  border: 5px solid red;
+}
+
+.container1 div{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.container1 div:nth-child(2){
+  margin-left: 100px;
+}
+
+.container1 div:nth-child(3){
+  margin-left: 200px;
+}
+
+.container2 {
+  width: 500px;
+  margin: 30px auto;
+  background-color: #eee;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.container2 > div {
+  background-color: black;
+}
+
+.container2 div * {
+  width: 100px;
+  height: 100px;
+  background-color:red;
+}
+
+.container2 div div:nth-child(2){
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.container3 {
+  border: 1px solid red;
+}
+
+.container3 div {
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.container4 {
+  border: 1px solid red;
+}
+
+.container4 span {
+  display: inline-block;
+  width: 80%;
+  background-color: yellow;
+  margin: 30px 0;
+}
+
+.container5 {
+  background-color: black;
+  width: 670px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.container5 > div{
+  background-color: red;
+  width: 290px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.container5 > div:last-child{
+  margin: 30px 0 0 auto;
+}
+
+.container5 div div{
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+
+.container5 div div:last-child{
+  margin: 30px 0 0 auto;
+}
