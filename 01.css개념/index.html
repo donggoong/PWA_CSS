@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 상속이 되는 속성이 있고 안되는 속성이 있음 통상 글자가 관련되면 상속이 되고 아니면 안됨
+    부모선택자보다 자식선택자 우선순위 더높음 */
+    body{
+      /* font-size: 16px; */
+      color: gray;
+    }
+    h1{
+      color: red;
+    }
+    abbr{
+      color: blue;
+    }
+    h3{
+      color: green;
+    }
+    .style1{
+      color: pink;
+    }
+    #id1{
+      color: aqua;
+    }
+    #id2{
+      color: greenyellow;
+    }
+    .style{
+      font-family: '휴먼둥근헤드라인'; /* 폰트 */
+      font-size: 30px; /* 글자크기 */
+      font-weight: bold; /* 진하게 */
+      text-decoration: underline; /* 밑줄 */
+      font-style: italic; /* 기울어짐 */
+      letter-spacing: 30px; /* 자간 */
+      background-color: darkblue; /* 배경색 */
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: #eee;
+    }
+    .box:hover{
+      background-color: red;
+    }
+    .box:active{
+      background-color: blue;
+    }
+    .ex > *:hover{
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>
+        <abbr>CSS</abbr>
+        <small>Cascading Style Sheets</small>
+      </h1>
+      <p>우선순위와 상속이 존재하는 디자인 양식.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Type선택자 (태그선택자)</h2>
+      <article>
+        <h3>사용법</h3>
+        <p>
+          태그명{속성:값} 형태로 선언
+        </p>
+      </article>
+      <article>
+        <h3>특징</h3>
+        <ul>
+          <li>동일한 태그에 모두 적용 된다.</li>
+          <li>자식태그선택자가 우선순위가 높다.</li>
+          <li>agent style과 겹칠 수 있다.</li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <section>
+      <h2>Class 선택자</h2>
+      <article>
+        <h3 class="style1">사용법</h3><!-- 숫자가 먼저나오면 안되고 띄어쓰기 안됨-->
+        <p>
+          .클래스명{속성:속성값;}을 이용해서 선언 후,
+          클래스속성을 이용해서 호출
+        </p>
+      </article>
+      <article>
+        <h3 class="style1", id="id1">특징</h3>
+        <ul>
+          <li>Type 선택자보다 우선순위가 높다.</li>
+          <li>반복호출이 가능하다.</li>
+          <li>수정관리가 용이하다.</li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <section>
+      <h2>ID 선택자</h2>
+      <article>
+        <h3>사용법</h3>
+        <p>
+          #아이디명{속성:속성값} 선언 후,
+          id속성을 이용해서 호출
+        </p>
+      </article>
+      <article>
+        <h3>특징</h3>
+        <ul>
+          <li>Class 선택자보다 우선순위가 높다.</li>
+          <li>반복호출이 허락되지 않으며, 수정관리가 어려움.</li>
+          <li>html문법이나 프로그램용도로 사용.</li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <section>
+      <h2>InLine Style (인라인 스타일)</h2>
+      <article>
+        <h3 style="color:blueviolet">사용법</h3>
+        <p>요소의 style속성을 지정 후 css를 작성</p>
+      </article>
+      <article>
+        <h3 class="style1" id="id2" style="color:blueviolet">특징</h3>
+          <li>ID 선택자보다 우선순위가 높다.</li>
+          <li>스크립트를 이용해 css를 제어하는 데 사용.</li>
+      </article>
+    </section>
+    <hr>
+    <section>
+      <h2><span style="color:brown">C</span>SS의 특징</h2>
+      <ul>
+        <li>요소단위로 css가 적용된다.</li>
+        <li>우선순위 : InLine Style, ID, Class, 자식태그, 부모태그</li>
+        <li>글자정렬, 글자관련 스타일은 상속이 된다.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>가상클래스</h2>
+      <p>css rule에서 정의된 클래스명 ex):hover :active 등</p>
+      <div class="box">
+      </div>
+    </section>
+    <hr>
+    <span class="style">가나다라</span>
+    <br>
+    <div class="ex">
+      <small>small</small>
+      <b>bold</b>
+      <span>span</span>
+      <em>em</em>
+      <i>italic</i>
+    </div>
+  </main>
+</body>
+
+</html>

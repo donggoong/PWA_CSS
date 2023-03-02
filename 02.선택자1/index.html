@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.style1#id1{
+      color: red;
+    }
+    .style2{
+      text-decoration: underline;
+    }
+    span.style1{          /* span 태그에 속해있는 style1 클래스 */
+      color: blue;
+    }
+    .box1,
+    .box2{          /*  box1과 그리고 box2 */
+      width: 300px;
+      height: 300px;
+      background-color: red;
+    }
+    .box1 > div,
+    .box2 > div{    /* > : 자식 box1 안에 있는 div 그리고 box2안에 있는 div */
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+    .box1 > div > div,
+    .box2 > div > div{ /* box1 안에 있는 div 그리고 box2안에 있는 div */
+      width: 100px;
+      height: 100px;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>선택자의 조합</h1>
+    <ul>
+      <li>class를 호출시 여백을 이용해서 다수의 class명을 호출할 수 있음. id는 하나만 호출 가능</li>
+      <li>combine(연결) 선택자 : 여러선택자를 연결하는 방식, 타입명은 앞쪽에서 사용</li>
+      <li>쉼표조합 선택자 : 쉼표를 이용해서 다수의 선택자를 연결하는 방식</li>
+      <li>자손(decendent) 선택자 : 여백을 이용한 선택자</li>
+      <li>자식(children) 선택자 : &gt;을 이용한 선택자</li>
+      <li>전체(universal) 선택자 : *</li>
+    </ul>
+
+    <hr>
+    <div class="style1" id="id1">style1</div>
+    <div class="style2">style2</div>
+    <div class="style1 style2">style1, style2</div> <!-- 두가지이상 사용하고 싶을때는 여백을 주면된다 -->
+    <span class="style1">span</span>
+    <hr>
+    <div class="box1">
+      <div>
+        <div>
+        </div><!-- box1 div div -->
+      </div><!-- box1 div -->
+    </div><!-- box1 -->
+    <br>
+    <div class="box2">
+      <div>
+        <div>
+          <div>
+          </div>
+        </div><!-- box1 div div -->
+      </div><!-- box2 div -->
+    </div><!-- box2 -->
+  </main>
+</body>
+</html>
