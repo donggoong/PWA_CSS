@@ -1,0 +1,172 @@
+.section1 .ex1 {
+  display: flex;
+  margin: 30px 0;
+  border:1px solid red;
+
+}
+
+.section1 .ex1 div{
+  width: 33%;
+  border: 1px solid blue;
+}
+
+.section1 .ex2 {
+  display: inline-flex;
+  margin: 30px 0;
+  border:1px solid red;
+}
+
+.section1 .ex2 div{
+  width: 33.33%;
+  border: 1px solid blue;
+}
+/* ------------------------- */
+.section2 .ex3,
+.section2 .ex4 {
+  display: flex;
+  margin: 30px 0;
+  border: 1px solid red;
+}
+.section2 .ex3 {
+  flex-direction: row-reverse;
+}
+.section2 .ex4 {
+  height: 100px;
+  flex-direction: column-reverse;
+}
+
+.section2 .ex3 div,
+.section2 .ex4 div {
+  border: 1px solid blue;
+}
+/* ------------------------------- */
+.section3 .ex5,
+.section3 .ex6 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+
+.section3 .ex5 {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.section3 .ex6 {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section3 .ex5 div,
+.section3 .ex6 div {
+  border: 1px solid blue;
+}
+/* ----------------------------- */
+.section4 .ex7,
+.section4 .ex8,
+.section4 .ex9 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+
+.section4 .ex7 {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: start;
+}
+
+.section4 .ex8 {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.section4 .ex9 {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4 .ex7 div,
+.section4 .ex8 div,
+.section4 .ex9 div {
+  border: 1px solid blue;
+}
+/* ------------------------------ */
+.section5 .flex.ex10{
+  display: flex;
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+}
+
+.section5 .ex10{
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.section5 .flex.ex10 div{
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.section5 .flex.ex10 div:nth-child(1){
+  flex: 1;
+}
+
+.section5 .flex.ex10 div:nth-child(2){
+  flex: 1;
+}
+
+.section5 .flex.ex10 div:nth-child(3){
+  flex: 2;
+}
+
+/* 
+.section5 .flex div:last-child{
+  flex: none;
+  width: 50%;
+} 
+*/
+
+.section5 .flex.ex11 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+
+}
+
+.section5 .flex.ex11 div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  flex: 1;
+}
+
+.section5 .flex.ex11 div:nth-child(2){
+  margin: 10px 0;
+}
+
+.ex12{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  width: 300px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+
+.ex12 div{
+  border: 1px solid blue;
+  flex: 1;
+}
