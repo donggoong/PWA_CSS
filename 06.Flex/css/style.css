@@ -1,0 +1,209 @@
+.ex1 {
+  display: flex;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.ex1 div {
+  background-color: blue;
+  width: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ex1 span {
+  background-color: pink;
+  width: 100px;
+  margin-left: auto;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ex2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.ex2 span {
+  background-color: yellow;
+}
+
+.ex3 {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.ex3 span {
+  background-color: yellow;
+}
+
+.ex3 span:nth-child(1) {
+  margin-left: 250px;
+}
+
+.ex3 span:nth-child(2) {
+  margin-left: 200px;
+}
+
+.ex3 span:nth-child(3) {
+  margin-left: 150px;
+}
+
+.ex4 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.ex4 div {
+  background-color: yellow;
+}
+
+.ex5 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.ex5 div {
+  background-color: yellow;
+  border: 1px solid red;
+  margin-top: auto;
+}
+
+.ex5 div:nth-child(1) {
+  height: 50px;
+}
+
+.ex5 div:nth-child(2) {
+  height: 100px;
+}
+
+.ex5 div:nth-child(3) {
+  height: 150px;
+  margin-left: 50px;
+}
+
+.ex6 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.ex6 div {
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+.ex7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.ex7 div {
+  border: 1px solid red;
+}
+
+.ex7 div:nth-child(2) {
+  margin: 0 10px;
+}
+
+.ex8 {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.ex8 div {
+  flex: 1;
+  border: 1px solid blue;
+}
+
+.ex9 {
+  display: flex;
+  /* flex-direction: row */
+  ;
+  justify-content: space-between;
+  /* align-items: stretch; */
+  width: 500px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.ex9>div {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid blue;
+}
+
+.ex9 h3 {
+  background-color: yellow;
+}
+
+.ex9 p {
+  background-color: green;
+  flex: 1;
+}
+
+.ex10 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.ex10 div {
+  width: 33.33%;
+  box-sizing: border-box;
+  border: 1px solid blue;
+}
+
+.ex11 {
+  width: 500px;
+  overflow: scroll;
+  border: 5px solid red;
+  margin: 0 auto;
+}
+
+.ex11 > div {
+  display: inline-flex;
+  border: 5px solid blue;
+}
+
+.ex11 > div > div {
+  padding: 30px;
+  border: 1px solid yellow;
+}
