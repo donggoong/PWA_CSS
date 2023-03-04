@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>gird system</h1>
+      <ul>
+        <li>
+          display속성이 grid인 컨테이너는 block레벨과 유사함. <br />
+          grid 컨테이너의 자식요소는 기존의 display속성이 사라짐.
+        </li>
+        <li>
+          grid컨테이너의 결자 설정 <br />
+          grid-template-columns: (갯수, 한칸의 높이(auto, 1fr)) <br />
+          grid-template-rows: (갯수, 한줄의 높이(auto, 1fr)) <br />
+          gap: 그리드간의 여백 설정
+        </li>
+        <li>
+          grid를 설정 <br />
+          grid-row: 2 / 6 (2번째줄에서 시작 해서 5번째줄에서 끝난다.)
+          grid-colu:mn 2 / span 3 (2번째칸에서 시작하는 3칸짜리) grid-area: 2 /
+          3 / 7 / 4 (2번째줄에서 시작 6번째 줄에서 끝나면서, 3번째칸에서
+          시작해서 3번째 칸에서 끝남)
+        </li>
+      </ul>
+      <hr />
+      <ul class="container1">
+        <li class="item1">1</li>
+        <li class="item2">2</li>
+        <li class="item3">3</li>
+        <li class="item4">4</li>
+        <li class="item5">5</li>
+      </ul>
+      <hr />
+      <div class="text1">abc</div>
+      <hr />
+      <ul class="container2">
+        <li class="item1">1</li>
+        <li class="item2">2</li>
+        <li class="item3">3</li>
+        <li class="item4">4</li>
+        <li class="item5">5</li>
+      </ul>
+      <hr />
+      <ul class="container3">
+        <li class="item1">1</li>
+        <li class="item2">2</li>
+        <li class="item3">3</li>
+        <li class="item4">4</li>
+        <li class="item5">5</li>
+        <li class="item6">6</li>
+      </ul>
+      <hr />
+      <ul class="container4">
+        <li class="item1">1</li>
+        <li class="item2">2</li>
+        <li class="item3">3</li>
+        <li class="item4">4</li>
+        <li class="item5">5</li>
+        <li class="item6">6</li>
+      </ul>
+      <hr />
+      <ul class="container5">
+        <li class="item1 htext">분기별실적</li>
+        <li class="item2 text">1</li>
+        <li class="item3 text">2</li>
+        <li class="item4 text">3</li>
+        <li class="item5 text">4</li>
+        <li class="item6 text">5</li>
+        <li class="item7 text">6</li>
+        <li class="item8 text">7</li>
+        <li class="item9 text">8</li>
+        <li class="item10 text">1분기</li>
+        <li class="item11 text">2분기</li>
+        <li class="item12 text">3분기</li>
+        <li class="item13 text">4분기</li>
+        <li class="item14 bg1"></li>
+        <li class="item15 bg1"></li>
+        <li class="item16 bg1"></li>
+        <li class="item17 bg1"></li>
+        <li class="item18 bg2"></li>
+        <li class="item19 bg2"></li>
+        <li class="item20 bg2"></li>
+        <li class="item21 bg2"></li>
+        <li class="item22"></li>
+        <li class="item23"></li>
+        <li class="item24"></li>
+        <li class="item25"></li>
+      </ul>
+      <hr />
+    </main>
+  </body>
+</html>
