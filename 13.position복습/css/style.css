@@ -1,0 +1,62 @@
+html{
+  scroll-behavior: smooth;
+}
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: pink;
+}
+
+.section1 {background: #eee;}
+.section2 {background: #f5a9a9;}
+.section3 {background: #d4f19e;}
+
+.ex1 {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold  ;
+  border: 1px solid black;
+}
+
+.ex1 div {
+  position: relative;
+  display: inline-block;
+}
+
+.ex1 div .red {
+  position: absolute;
+  left: 0;
+  height: 50%;
+  overflow: hidden;
+  color: red;
+}
+
+.ex2 {
+  display: flex;
+  width: 900px;
+  border: 1px solid black;
+  margin: 30px auto;
+}
+
+.ex2 div {
+  position: relative;
+  background-color: yellow;
+  margin: 20px;
+  height: 100px;
+  flex: 1;
+}
+
+.ex2 div::before{
+  content: '';
+  position: absolute;
+  left: calc(50% - 15px);
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: yellow;
+}
