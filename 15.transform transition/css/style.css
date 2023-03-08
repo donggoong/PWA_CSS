@@ -1,0 +1,98 @@
+.ex1 {
+  text-align: center;
+  margin: 50px 0;
+}
+.ex1 span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.ex1 span:nth-child(2){
+  transform: rotate(45deg) scale(1.5) translate(0); 
+}
+.ex1 span:last-child{
+  position: relative;
+  z-index: 1;
+} 
+
+.ex2 {
+  position: relative;
+  margin: 50px 0;
+  border: 1px solid black;
+}
+.ex2 div {
+  width: 50%;
+  height: 50px;
+  background-color: #ccc;
+}
+.ex2 span{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+}
+
+.ex3 span{
+  display: inline-block;
+  padding: 30px;
+  cursor: pointer;
+  opacity: 0.3;
+  background-color: #ccc;
+  transition: all .5s;
+}
+.ex3 span:hover{
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+
+.ex4 {
+  margin: 50px auto;
+  border: 1px solid black;
+}
+.ex4 div {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left:0;
+  transition: border-radius 0.5s, left 2s, transform 2s;
+  transition-delay: 2s, 0s, 0s;
+  background:linear-gradient(red, blue);
+}
+.ex4 div.active{
+  border-radius: 50%;
+  transition-delay: 0s, 0.5s, 0.5s;
+  left: calc(100% - 50px);
+  transform: rotate(1000deg);
+}
+
+.ex5 {
+  border: 1px solid black;
+  margin: 50px 0;
+  text-align: center;
+}
+.ex5:hover div{
+  opacity: 1;
+}
+.ex5 div{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  background: blue;
+  color: #fff;
+  line-height: 100px;
+  transition: opacity 1s;
+}
+.ex5:hover div:nth-child(2){
+  transition-delay: .5s;
+}
+.ex5:hover div:last-child{
+  transition-delay: 1s;
+}
+
